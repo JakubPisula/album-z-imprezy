@@ -1,0 +1,6 @@
+# dane z imprezy (konta, komentarze) – nigdy do repo
+galeria-dane.json
+*.local.gs
+.clasp.json
+.DS_Store
+Thumbs.db

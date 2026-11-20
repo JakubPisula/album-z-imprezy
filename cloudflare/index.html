@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f0d13">
+<title>Album z imprezy</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0f0d13; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+<!-- Album osadzony w ramce: Twoja domena w pasku adresu, bez paska "Aplikacja utworzona przez użytkownika Google Apps Script". -->
+<iframe id="app" allow="autoplay; fullscreen; clipboard-write" allowfullscreen></iframe>
+<script>
+  // Wklej tu adres wdrożenia z Apps Script (kończy się na /exec):
+  const APP = 'https://script.google.com/macros/s/WKLEJ_ID_WDROZENIA/exec';
+  // ?view=pokaz i inne parametry przechodzą dalej do albumu
+  document.getElementById('app').src = APP + location.search;
+</script>
+</body>
+</html>
