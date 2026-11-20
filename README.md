@@ -5,10 +5,11 @@ Wspólny album na zdjęcia i filmy z wesela, urodzin czy osiemnastki. Goście sk
 Całość działa na darmowym **Google Apps Script**, bez serwera, abonamentu i reklam. Opcjonalnie możesz podpiąć własną domenę przez Cloudflare Pages.
 
 <p align="center">
-  <img src="docs/logowanie.jpg" width="190" alt="Logowanie">
-  <img src="docs/album.jpg" width="190" alt="Album">
-  <img src="docs/komentarze.jpg" width="190" alt="Reakcje i komentarze">
-  <img src="docs/kod-qr.jpg" width="190" alt="Kod QR dla gości">
+  <img src="docs/logowanie.jpg" width="160" alt="Logowanie">
+  <img src="docs/album.jpg" width="160" alt="Album">
+  <img src="docs/wrzucanie.jpg" width="160" alt="Wrzucanie zdjęć">
+  <img src="docs/komentarze.jpg" width="160" alt="Reakcje i komentarze">
+  <img src="docs/kod-qr.jpg" width="160" alt="Kod QR dla gości">
 </p>
 <p align="center"><img src="docs/pokaz.jpg" width="780" alt="Pokaz slajdów na TV"></p>
 
