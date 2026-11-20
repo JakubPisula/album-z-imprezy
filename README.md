@@ -17,7 +17,7 @@ Całość działa na darmowym **Google Apps Script**, bez serwera, abonamentu i 
 ## Co potrafi
 
 - **Wrzucanie zdjęć i filmów** z telefonu: kilka plików naraz, z paskiem postępu. Pliki idą w kawałkach po 8 MB, więc przechodzą też długie filmy, a zerwane połączenie jest wznawiane.
-- **Konta gości** z samym loginem i hasłem, bez maila. Do tego zdjęcie profilowe z prostym edytorem (kadrowanie, obrót, obsługa HEIC z iPhone'a).
+- **Konta gości** z samym loginem i hasłem, bez maila. Do tego zdjęcie profilowe z prostym edytorem (przybliżanie, kadrowanie, obrót).
 - **Reakcje** ❤️ 😍 😂 🔥 👏 i **komentarze** z odpowiedziami.
 - **Galeria na żywo**: pasek „Najnowsze”, filtry (Najlepsze, Zdjęcia, Filmy, Moje) i podgląd na pełnym ekranie z przesuwaniem palcem.
 - **Pokaz slajdów na TV lub rzutnik** (`?view=pokaz`): nowe zdjęcia pojawiają się po kilkudziesięciu sekundach, a w rogu jest kod QR dla kolejnych gości.
