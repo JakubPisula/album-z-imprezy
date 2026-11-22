@@ -2,15 +2,20 @@
  * Album z imprezy – router subdomen (Cloudflare Worker)
  *
  * Każda subdomena = osobna impreza:
- *   https://30paulina.abuk.ovh            -> album
- *   https://30paulina.abuk.ovh/?view=pokaz -> pokaz slajdów na TV
+ *   https://30pauliny.abuk.ovh            -> album
+ *   https://30pauliny.abuk.ovh/?view=pokaz -> pokaz slajdów na TV
  *
  * Nowa impreza = nowa linijka w IMPREZY + nowa domena w Workerze
  * (Settings -> Domains & Routes -> Add -> Custom domain).
  */
 const IMPREZY = {
   // subdomena: adres wdrożenia Apps Script (kończy się na /exec)
-  '30paulina': 'https://script.google.com/macros/s/WKLEJ_ID_WDROZENIA/exec',
+  '30pauliny': 'https://script.google.com/macros/s/WKLEJ_ID_WDROZENIA/exec',
+};
+
+// stare adresy -> nowe (przekierowanie 301, np. po zmianie nazwy subdomeny)
+const PRZEKIEROWANIA = {
+  '30paulina': '30pauliny',
 };
 
 export default {
@@ -18,6 +23,11 @@ export default {
     const url = new URL(request.url);
     const sub = url.hostname.split('.')[0].toLowerCase();
     const app = IMPREZY[sub];
+
+    if (PRZEKIEROWANIA[sub]) {
+      url.hostname = url.hostname.replace(/^[^.]+/, PRZEKIEROWANIA[sub]);
+      return Response.redirect(url.toString(), 301);
+    }
 
     if (url.pathname === '/favicon.ico') return new Response(null, { status: 204 });
 
